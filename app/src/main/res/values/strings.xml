@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Umpire Buddy</string>
+    <string name="ball_button">BALL</string>
+    <string name="strike_button">STRIKE</string>
+    <string name="strike_label">Strike:</string>
+    <string name="ball_label">Ball:</string>
+    <string name="about_text">Umpire Buddy Version 2.0 by Binh Mai</string>
+    <string name="title_activity_about">About</string>
+    <string name="total_count_label">Total Outs:</string>
+    <string name="ball_count">0</string>
+    <string name="strike_count">0</string>
+    <string name="total_out_count">0</string>
+
+</resources>

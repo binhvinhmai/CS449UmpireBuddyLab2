@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.binhmai.cs449lab1umpirebuddy.MainActivity"
+    android:background="#008080">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/strike_count"
+        android:id="@+id/strike_count_value"
+        android:layout_marginTop="48dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/strike_label_widget"
+        android:layout_toEndOf="@+id/strike_label_widget"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/strike_label"
+        android:id="@+id/strike_label_widget"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@id/strike_count_value"
+        android:layout_alignLeft="@+id/ball_label_widget"
+        android:layout_alignStart="@+id/ball_label_widget" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/ball_label"
+        android:id="@+id/ball_label_widget"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/ball_count_value"
+        android:layout_toRightOf="@+id/total_count_label"
+        android:layout_toEndOf="@+id/total_count_label" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/ball_count"
+        android:id="@+id/ball_count_value"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/strike_count_value"
+        android:layout_alignLeft="@+id/strike_count_value"
+        android:layout_alignStart="@+id/strike_count_value"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strike_button"
+        android:id="@+id/strike_button"
+        android:layout_marginTop="46dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/ball_count_value"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ball_button"
+        android:id="@+id/ball_button"
+        android:background="#ffffff"
+        android:layout_below="@+id/strike_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/total_count_label"
+        android:id="@+id/total_count_label"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/ball_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/total_out_count"
+        android:textColor="#ffffff"
+        android:id="@+id/total_out_count"
+        android:layout_alignTop="@+id/total_count_label"
+        android:layout_alignRight="@+id/strike_label_widget"
+        android:layout_alignEnd="@+id/strike_label_widget" />
+</RelativeLayout>
